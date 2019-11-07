@@ -112,7 +112,7 @@ let g:indentLine_char = '¦'
 " --Mappings
 
 " nerdtree
-nnoremap <silent> <Leader>f :NERDTreeToggle<CR>
+nnoremap <silent> <Leader>t :NERDTreeToggle<CR>
 nnoremap <silent> <F2> :NERDTreeFind<CR>
 
 " tagbar
