@@ -62,7 +62,7 @@ set cc=81
 hi ColorColumn ctermbg=0
 
 " Scroll offset
-set so=5
+set so=7
 
 " Search highlight
 set hlsearch
