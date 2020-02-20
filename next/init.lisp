@@ -24,9 +24,8 @@
         ("wpita" . "https://it.wikipedia.org/w/index.php?search=~a"))
       (get-default 'remote-interface 'search-engines)))))
 
-(setf *remote-interface-class 'my-remote-interface)
-
+(setf *remote-interface-class* 'my-remote-interface)
 
 ; TODO: startup options
-
 (setf next:*use-session* nil)
+
