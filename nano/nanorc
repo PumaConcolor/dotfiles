@@ -12,6 +12,7 @@
 ## double quote on the line will be seen as the closing quote.
 
 include "/usr/share/nano/*.nanorc"
+include "~/.nano/*.nanorc"
 
 ## Make the 'nextword' function (Ctrl+Right) stop at word ends
 ## instead of at beginnings.
