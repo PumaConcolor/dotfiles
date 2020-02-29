@@ -7,14 +7,9 @@
 
 complete -cf sudo
 
-alias cd..='cd ..'
-alias ls='ls --color=auto'
-alias l='ls -la'
-alias ll='ls -lha'
-alias vi='nvim'
-alias grep='grep --color=auto'
-# alias please='sudo'
-alias su='su -l'
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
 
 shopt -s autocd
 

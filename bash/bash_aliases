@@ -1,0 +1,33 @@
+#
+# ~/.bash_aliases
+#
+
+# Modified commands
+alias diff='colordiff'
+alias grep='grep --color=auto'
+
+# ls
+alias ls='ls --color=auto'
+alias l='ls -la'
+alias ll='ls -lha'
+alias lz='ll -S'            # sort by size
+alias ld='ll -t'            # sort by date
+alias lx='ll -X'            # sort by extension
+
+# neovim
+alias vi='nvim'
+alias vim='nvim'
+alias suvi='sudo nvim'
+
+# su
+alias su='cat /home/puma/Documents/warn-cat && su -l'
+
+# Safety measures
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -I'
+
+# Error tolerance
+alias cd..='cd ..'
+alias :q='exit'
+alias :Q='exit'
