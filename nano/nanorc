@@ -12,11 +12,11 @@
 ## double quote on the line will be seen as the closing quote.
 
 include "/usr/share/nano/*.nanorc"
-include "~/.nano/*.nanorc"
+# include "~/.nano/*.nanorc"
 
 ## Make the 'nextword' function (Ctrl+Right) stop at word ends
 ## instead of at beginnings.
-# set afterends
+set afterends
 
 ## When soft line wrapping is enabled, make it wrap lines at blanks
 ## (tabs and spaces) instead of always at the edge of the screen.
@@ -163,10 +163,10 @@ set punct "!.?"
 # set suspend
 
 ## Use this tab size instead of the default; it must be greater than 0.
-# set tabsize 8
+set tabsize 4
 
 ## Convert typed tabs to spaces.
-# set tabstospaces
+set tabstospaces
 
 ## Save automatically on exit; don't prompt.
 # set tempfile
@@ -261,7 +261,7 @@ set keycolor cyan
 ## them easier to remember and faster to type using nano's -Y option.
 
 ## To include all existing syntax definitions, you can do:
-# include "/usr/share/nano/*.nanorc"
+include "/usr/share/nano/*.nanorc"
 
 
 ## If <Tab> should always produce four spaces when editing a Python file,
