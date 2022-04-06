@@ -1,6 +1,6 @@
 #
 # ~/.bashrc
-#
+    #
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -13,12 +13,16 @@ fi
 
 shopt -s autocd
 
-export PATH="${PATH}:/home/puma/.local/bin"
+export PATH="${PATH}:/home/puma/.local/bin:/home/puma/.cabal/bin"
 
-PS1=$'\[\033[0;36m\]\u05D0\[\033[0m\] '
-# PS1='[\u@\h \W]\$ '
+PS1=$'\[\033[0;36m\]\W \u05D0\[\033[0m\] ' # current directory, aleph
+# PS1=$'\[\033[0;36m\]\u05D0\[\033[0m\] ' # aleph
+# PS1='[\u@\h \W]\$ ' # original
 
 . ~/git-completion.bash
+. ~/git-prompt.bash
+
+export PS1
 
 neofetch
 
